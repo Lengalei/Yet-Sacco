@@ -1,0 +1,305 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+:root {
+    --green:#2E8B57;
+}
+body{
+    background-color: #fff;
+    position: relative;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;
+
+}
+.logo{
+    width: 170px;
+    height: 100px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    overflow: hidden;
+}
+.logo img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+nav .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .nav-links  li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+nav .nav-links li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    /* padding: 0 10px; */
+    cursor: pointer;
+}
+nav .nav-links li a:hover{
+    color: var(--green);
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-10px ;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 100%;
+}
+.btnlogin{
+    width: 120px;
+    height: 40px;
+    background-color: var(--green);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnlogin:hover{
+    background-color: #fff;
+    color: var(--green);
+    transition: 0.9s;
+    border: solid 1px #2E8B57;
+}
+.button{
+    width: 200px;
+    height: 200px;
+    padding-left: 600px;
+    border-radius: 50%;
+}
+.btn{
+    width: 200px;
+    height: 200px;
+    padding-top: 80px;
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.fas{
+    float: right;
+}
+.btn .fa{
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--green);
+    transition: 0.9s;
+    border: solid 1px #2E8B57;
+}
+nav .burger{
+    display: none;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+}
+nav .nav-links li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: var(--green);
+}
+nav .nav-links li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+    color: #fff;
+}
+nav .nav-links li:hover .dropdown ul li{
+    width: 140px;
+    padding: 10px;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(9, 92, 8, 0.8);
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translate(0) rotate(0);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(1.3) translate(-90px) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+.hero .h3simple{
+    padding-top: 100px;
+    color: var(--green);
+    padding-left: 30px;
+    padding-bottom: 40px;
+
+}
+.h1intro {
+    padding-left: 20px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    display: flex;
+    width: 60%;
+}
+.p{
+    width: 40%;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.top{
+    width: 30px;
+    position: fixed;
+    bottom: 7.5rem; right: 2rem;
+    z-index: 100;
+    display: none ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
