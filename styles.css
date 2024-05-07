@@ -261,10 +261,17 @@ nav .nav-links li:hover .dropdown ul li{
 
 .top{
     width: 30px;
+    height: 40px;
     position: fixed;
     bottom: 7.5rem; right: 2rem;
     z-index: 100;
     display: none ;
+    background-color: #000;
+    color: #fff;
+}
+.top .fas{
+    color: white;
+    font-size: large;
 }
 
 
