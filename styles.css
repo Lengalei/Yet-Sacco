@@ -266,8 +266,38 @@ nav .nav-links li:hover .dropdown ul li{
 .about .h2{
     color: var(--green);
     font-weight: 400;
+    text-align: center;
 }
-
+h2{
+    text-align: center;
+    margin: 80px auto;
+    font-size: 30px;
+    max-width: 400px;
+    position: relative;
+    
+}
+h2:before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: var(--green);
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+h2:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: var(--green);
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
 
 
 
