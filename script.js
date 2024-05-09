@@ -31,3 +31,8 @@ $(document).ready(function(){
         )
     })
 });
+
+// const handleClick = () => {
+//     window.location.href = "/";
+//     alert("Thank you for your feedback!")
+// }
