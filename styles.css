@@ -299,33 +299,11 @@ h2{
     margin-left: 170px;
     top: -9px;
 }
-/* h2:before{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    position: absolute;
-    background: var(--green);
-    left: 15%;
-    top: 100%;
-    margin-top: 5px;
-    
+.about .p{
+    width:400px;
+    height: 50px;
+    padding: 20px;
 }
-h2:after{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    position: absolute;
-    background: var(--green);
-    right:15%;
-    top: 100%;
-    margin-top: 5px;
-   
-}
-.h2 .fa{
-    top: -50;
-} */
 
 
 
@@ -336,18 +314,14 @@ h2:after{
     bottom: 7.5rem; right: 2rem;
     z-index: 100;
     display: none ;
-    background-color: #000;
-    color: #fff;
+    background-color: #a9ffa9;
+    color: var(--green);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
 }
-/* .top .fas{
-    color: white;
-    font-size: large;
-} */
-.about .p{
-    width:400px;
-    height: 50px;
-    padding: 20px;
-}
+
+
 
 
 
