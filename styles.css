@@ -161,8 +161,12 @@ nav .nav-links li:hover .dropdown ul li{
     width: 100%;
     height: 100%;
     overflow: hidden;
+<<<<<<< HEAD
     
     
+=======
+   
+>>>>>>> 6af8b9e6054bfdfa2700e34c0cc42a3a9c65d544
 }
 .box div{
     position: absolute;
@@ -233,7 +237,7 @@ nav .nav-links li:hover .dropdown ul li{
     }
 }
 .hero .h3simple{
-    padding-top: 100px;
+    padding-top: 130px;
     color: var(--green);
     padding-left: 30px;
     padding-bottom: 40px;
@@ -245,6 +249,7 @@ nav .nav-links li:hover .dropdown ul li{
     font-size: 30px;
     display: flex;
     width: 60%;
+    
 }
 .p{
     width: 40%;
@@ -256,11 +261,13 @@ nav .nav-links li:hover .dropdown ul li{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 3em;
     background-color: #fff;
 }
+
 .about .aboutphoto{
     width: 500px;
     height:350px;
@@ -302,7 +309,24 @@ nav .nav-links li:hover .dropdown ul li{
     height: 50px;
     padding: 20px;
 }
-
+.about .countercontainer{
+    width: 100px;
+    height: 50px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.about .countercontainer .counter{
+    width: 100px;
+    height: 50px;
+    font-size: 50px;
+    color: var(--green);
+}
+.counter span p{
+    font-size: 20px;
+    color: var(--green);
+}
 
 
 .top{
@@ -318,21 +342,6 @@ nav .nav-links li:hover .dropdown ul li{
     font-size: 30px;
     border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
