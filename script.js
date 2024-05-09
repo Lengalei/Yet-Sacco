@@ -32,16 +32,32 @@ $(document).ready(function(){
     })
 });
 
+// Function to start the counter when it becomes visible
+function startCounterWhenVisible(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Start the counter
+            const counterspan = entry.target.querySelector('.counter');
+            let counterNumber = parseInt(counterspan.textContent);
 
-const counterEl = document.querySelector('.counter');
-let counterNumber = 0;
+            const updateCounter = setInterval(function () {
+                counterNumber++;
+                counterspan.textContent = counterNumber;
+                if (counterNumber >= 20) {
+                    clearInterval(updateCounter);
+                    counterspan.style.color = '#2E8B57';
+                }
+            }, 60);
 
-const updateCounter = setInterval(function (){
-    counterNumber++;
-    counterEl.textcontent = counterNumber;
+            // Stop observing once started
+            observer.unobserve(entry.target);
+        }
+    });
+}
 
-    if (counterNumber >= 20) {
-        clearInterval(updateCounter);
-        counterEl.style.color = '#2E8B57'
-    }
-},1)
+// Create a new IntersectionObserver
+const observer = new IntersectionObserver(startCounterWhenVisible, { threshold: 0.5 });
+
+// Observe the target element
+const counterContainer = document.querySelector('.countercontainer');
+observer.observe(counterContainer);
