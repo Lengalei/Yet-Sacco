@@ -32,7 +32,16 @@ $(document).ready(function(){
     })
 });
 
-// const handleClick = () => {
-//     window.location.href = "/";
-//     alert("Thank you for your feedback!")
-// }
+
+const counterEl = document.querySelector('.counter');
+let counterNumber = 0;
+
+const updateCounter = setInterval(function (){
+    counterNumber++;
+    counterEl.textcontent = counterNumber;
+
+    if (counterNumber >= 20) {
+        clearInterval(updateCounter);
+        counterEl.style.color = '#2E8B57'
+    }
+},1)
