@@ -47,7 +47,7 @@ function startCounterWhenVisible(entries, observer) {
                     clearInterval(updateCounter);
                     counterspan.style.color = '#2E8B57';
                 }
-            }, 60);
+            }, 100);
 
             // Stop observing once started
             observer.unobserve(entry.target);

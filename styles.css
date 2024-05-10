@@ -317,8 +317,8 @@ nav .nav-links li:hover .dropdown ul li{
     font-size: 50px;
     color: var(--green);
 }
-.counter span p{
-    font-size: 20px;
+.countercontainer p{
+    font-size: 40px;
     color: var(--green);
 }
 
