@@ -61,3 +61,5 @@ const observer = new IntersectionObserver(startCounterWhenVisible, { threshold: 
 // Observe the target element
 const counterContainer = document.querySelector('.countercontainer');
 observer.observe(counterContainer);
+
+
