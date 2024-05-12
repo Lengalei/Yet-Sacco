@@ -8,6 +8,15 @@
 :root {
     --green:#2E8B57;
 }
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
 body{
     background-color: #fff;
     position: relative;
@@ -129,9 +138,16 @@ a:hover:after{
     transition: 0.9s;
     border: solid 1px #2E8B57;
 }
-nav .burger{
-    display: none;
+nav .menu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: #333;
+    color: #fff;
     cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
 }
 .dropdown{
     display: none;
@@ -357,5 +373,41 @@ nav .nav-links li:hover .dropdown ul li{
 
 
 
-
+/* Media queries */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .home{
+        padding: 1rem;
+    }
+}
+@media (max-width:400px){
+    header{
+        width: 100vw;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    
+}
 
