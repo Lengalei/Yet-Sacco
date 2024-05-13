@@ -28,6 +28,26 @@ body {
     border-radius: 13px;
     overflow: hidden;
 }
+.logo{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 10;
+    position: fixed;
+    border-radius: 10px;
+    
+}
+.logo img{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
 .form-container{
     position: absolute;
     width: 60%;
@@ -56,6 +76,10 @@ h1 {
 .social-container{
     margin: 20px 0px;
 }
+.social-container a:hover{
+    background-color: #056608;
+    color: #fff;
+}
 .social-container a{
     border: 1px solid #DDD;
     border-radius: 50px;
@@ -65,6 +89,8 @@ h1 {
     margin: 0px 5px;
     height: 40px;
     width: 40px;
+    /* background-color: #056608;
+    color: #fff; */
 }
 span{
     font-size: 12px;
