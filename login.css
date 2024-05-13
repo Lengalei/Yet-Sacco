@@ -7,9 +7,9 @@
 }
 
 :root {
-    --linear-grad: linear-gradient(to right, #141E30, #243B55);
-    --grad-clr1: #141E30;
-    --grad-clr2: #243B55;
+    --linear-grad: linear-gradient(to right, #056608, #52C755);
+    --grad-clr1: #2E8B57;
+    --grad-clr2: #2E8B57;
 }
 
 body {
@@ -146,5 +146,44 @@ button{
     border-radius: 20px;
 }
 .overlay {
-    
+    position: relative;
+    background: var(--linear-grad);
+    color: #fff;
+    left: -150%;
+    height: 100%;
+    width: 250%;
+    transition: transform 0.6s ease-in-out;
+}
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    height: 100%;
+    width: 340px;
+    transition: 0.6s ease-in-out;
+}
+.overlay-left {
+    right: 60%;
+    transform: translatex(-12%);
+}
+.overlay-right {
+    right: 0;
+    transform: translatex(0%);
+}
+.overlay-panel h1{
+    color: #fff;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 25px 0px 35px;
+}
+.overlay-panel button{
+    border: ;
 }
