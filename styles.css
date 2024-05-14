@@ -63,19 +63,19 @@ body{
 .dropdown{
     display: none;
 }
-nav ul li:hover .dropdown{
+.navbar li:hover .dropdown{
     display: block;
     position: absolute;
-    left: 0;
-    top: 100%;
+    /* left: 0; */
+    top: 80%;
     background: var(--green);
 }
-nav ul li:hover .dropdown ul{
+.navbar li:hover .dropdown {
     display: block;
     margin: 10px;
     color: #fff;
 }
-nav ul li:hover .dropdown ul li{
+.navbar  li:hover .dropdown li{
     width: 140px;
     padding: 10px;
 }
@@ -190,7 +190,8 @@ nav ul li:hover .dropdown ul li{
 
 .about .aboutphoto{
     width: 49%;
-    height:350px;
+    height:400px;
+    padding-top: 50px ;
     object-fit: cover;
     overflow: hidden;
 }
@@ -234,6 +235,11 @@ nav ul li:hover .dropdown ul li{
     display: flex;
     align-self: stretch ;
 }
+/* .countercontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+} */
 .about .countercontainer{
     width: 100px;
     height: 50px;
@@ -245,13 +251,22 @@ nav ul li:hover .dropdown ul li{
 .about .countercontainer .counter{
     width: 100px;
     height: 50px;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 500;
     color: var(--green);
 }
 .countercontainer p{
+    padding-top: 50px;
+    font-weight: 500;
     font-size: 40px;
     color: var(--green);
 }
+.years{
+    margin-top: 40px;
+    padding-left: 100px;
+    font-size: 20px;
+} 
+
 
 /* login page */
 
