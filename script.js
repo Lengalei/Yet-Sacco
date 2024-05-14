@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
     $('#menu').click(function(){
@@ -32,6 +34,7 @@ $(document).ready(function(){
     })
 });
 
+
 // Function to start the counter when it becomes visible
 function startCounterWhenVisible(entries, observer) {
     entries.forEach(entry => {
@@ -65,7 +68,7 @@ observer.observe(counterContainer);
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
+ menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('open');
 }

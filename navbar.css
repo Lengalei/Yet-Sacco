@@ -70,10 +70,7 @@ header{
     font-weight: 500;
     transition: all .50s ease;
 }
-.user{
-    /* display: ;
-    align-items: center; */
-}
+
 .user i{
     color: #fff;
     font-size: 18px;
@@ -124,9 +121,10 @@ header{
         margin: 0px 20px;
     }
 }
-@media (max-width: 1090px){
+@media (max-width: 900px){
     #menu-icon{
         display: block;
+        color: #000;
     }
     .navbar{
         position: absolute;

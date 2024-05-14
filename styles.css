@@ -24,10 +24,7 @@ body{
     position: relative;
     scroll-behavior: smooth;
 }
-/* header{
-    width: 100%;
-    height: 100vh;
-} */
+
 
 .logo{
     width: 170px;
@@ -41,80 +38,7 @@ body{
     object-fit: cover;
     overflow: hidden;
 }
-header{
-    position: fixed;
-    z-index: 1000;
-    height: 15vh;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    
-}
-header .navbar li{
-    display: inline-block;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #0E050F;
-    border-radius: 10px;
-    background-color: none;
-    transition: .8s;
-}
-header .navbar ul li a{
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #0E050F;
-    border-radius: 10px;
-    background-color: none;
-    transition: .8s;
 
-}
-header .navbar ul li a:hover{
-    background: var(--yellow);
-}
-#menu{
-    position: fixed;
-    top: 2rem; right: 2rem;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    padding: 1rem 1.5rem;
-    z-index: 1000;
-    display: none;
-}
-
-/* a:after{
-    content: "";
-    position: absolute;
-    background-color: #000;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom:-10px ;
-    transition: 0.3s;
-}
-a:hover:after{
-    width: 100%;
-} */
-.btnlogin{
-    width: 120px;
-    height: 40px;
-    background-color: var(--green);
-    border: none;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.btnlogin:hover{
-    background-color: #fff;
-    color: var(--green);
-    transition: 0.9s;
-    border: solid 1px #2E8B57;
-}
 .button{
     width: 200px;
     height: 200px;
@@ -365,50 +289,3 @@ nav ul li:hover .dropdown ul li{
 
 
 
-/* For screens smaller than 768px (e.g., smartphones) */
-@media (max-width:1200px){
-    
-}
-@media (max-width:991px){
-    header{
-        left: -120%;
-    }
-    #menu{
-        display: block;
-    }
-    header.toggle{
-        left: 0%;
-    }
-    body{
-        padding: 0;
-    }
-}
-@media (max-width:768px){
-    html{
-        font-size: 50%;
-    }
-    .home{
-        padding: 1rem;
-    }
-}
-@media (max-width:400px){
-    header{
-        width: 100vw;
-    }
-    .heading{
-        margin: 0 3rem;
-    }
-    .about .row .counter .box{
-        width: 100%;
-    }
-    .education .box-container .box{
-        width: 100%;
-    }
-    .portfolio .box-container .box{
-        width: 100%;
-    }
-    .contact .row form {
-        margin: 3rem 0;
-    }
-}
-  
