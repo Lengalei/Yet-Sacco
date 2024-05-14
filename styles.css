@@ -10,15 +10,6 @@
 :root {
     --green:#2E8B57;
 }
-html::-webkit-scrollbar{
-    width: 1.4rem;
-}
-html::-webkit-scrollbar-track{
-    background: #222;
-}
-html::-webkit-scrollbar-thumb{
-    background: var(--green);
-}
 body{
     background-color: #fff;
     position: relative;
@@ -40,10 +31,12 @@ body{
 }
 
 .button{
+    position: absolute;
     width: 200px;
     height: 200px;
-    padding-left: 600px;
+    padding-left: 700px;
     border-radius: 50%;
+    top: 20%;
 }
 .btn{
     width: 200px;
@@ -60,6 +53,12 @@ body{
     font-size: 25px;
     font-weight: bold;
     
+}
+.btn:hover{
+    color: var(--green);
+    border: 1px solid #2E8B57;
+    background: #fff;
+    transition: transform .100s ease-in ;
 }
 .dropdown{
     display: none;
@@ -87,7 +86,7 @@ nav ul li:hover .dropdown ul li{
 }
 .hero{
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
 }
 .box div{
@@ -174,7 +173,7 @@ nav ul li:hover .dropdown ul li{
     
 }
 .p{
-    width: 40%;
+    width: 50%;
     padding-left: 30px;
     font-size: 18px;
 }
@@ -186,12 +185,11 @@ nav ul li:hover .dropdown ul li{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3em;
     background-color: #fff;
 }
 
 .about .aboutphoto{
-    width: 500px;
+    width: 49%;
     height:350px;
     object-fit: cover;
     overflow: hidden;
@@ -200,12 +198,15 @@ nav ul li:hover .dropdown ul li{
     width: 100%;
     height:100%;
 }
+.aboutcontent{
+    width: 50%;
+}
 
 .forabout {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 50%;
     color: #2E8B57;
     gap: 3px;
     min-width: 250px;
@@ -227,9 +228,11 @@ nav ul li:hover .dropdown ul li{
     width: 60%;
 }
 .about .p{
-    width:400px;
+    width:80%;
     height: 50px;
     padding: 20px;
+    display: flex;
+    align-self: stretch ;
 }
 .about .countercontainer{
     width: 100px;
@@ -278,7 +281,20 @@ nav ul li:hover .dropdown ul li{
 
 
 
-
+@media (max-width:600px){
+.p{
+    width: 100%;
+}
+    
+    .about{
+        margin: 10px;
+        top: -40%;
+    }
+    .about .p{
+        width: 100%;
+        padding: 20px;
+    }
+}
 
 
 
