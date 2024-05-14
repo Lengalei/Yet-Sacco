@@ -8,8 +8,8 @@ $(document).ready(function(){
 
 
     $(window).on('scroll load', function(){
-        $('#menu').removeClass('fa-times');
-        $('header').removeClass('toggle');
+        // $('#menu').removeClass('fa-times');
+        // $('header').removeClass('toggle');
 
         if($(window).scrollTop()> 0){
             $('.top').show();
@@ -62,4 +62,10 @@ const observer = new IntersectionObserver(startCounterWhenVisible, { threshold: 
 const counterContainer = document.querySelector('.countercontainer');
 observer.observe(counterContainer);
 
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+}

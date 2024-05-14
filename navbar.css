@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+    --main-color: #2E8B57;
+
+}
+body{
+    background-color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    color: var(--main-color);
+    font-size:28px ;
+    margin-right: 3px;
+}
+.logo span{
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color:var(--main-color) ;
+}
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.user{
+    /* display: ;
+    align-items: center; */
+}
+.user i{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 2px;
+}
+.user i:hover{
+    color: #2E8B57;
+}
+.main a:hover{
+    color: var(--main-color);
+}
+.btnlogin{
+    width: 120px;
+    height: 30px;
+    background-color: #2E8B57;
+    border: none;
+    color: var(--bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnlogin:hover{
+    background-color: #fff;
+    color: var(--green);
+    transition: 0.9s;
+    border: solid 1px #2E8B57;
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+    .navbar a{
+        display: block;
+        color: #fff;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .navbar a.active{
+        color: var(--text-color);
+    }
+    .navbar .open{
+        right: 2%;
+    }
+}
