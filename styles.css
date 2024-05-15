@@ -14,6 +14,9 @@ body{
     background-color: #fff;
     position: relative;
     scroll-behavior: smooth;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
 }
 
 
@@ -31,12 +34,10 @@ body{
 }
 
 .button{
-    position: absolute;
+   
     width: 200px;
     height: 200px;
-    padding-left: 700px;
     border-radius: 50%;
-    top: 20%;
 }
 .btn{
     width: 200px;
@@ -52,13 +53,15 @@ body{
     border: none;
     font-size: 25px;
     font-weight: bold;
+    transition: all 500ms ease-in ;
     
 }
 .btn:hover{
     color: var(--green);
     border: 1px solid #2E8B57;
     background: #fff;
-    transition: transform .100s ease-in ;
+    scale: 1.05;
+    
 }
 .dropdown{
     display: none;
@@ -67,7 +70,7 @@ body{
     display: block;
     position: absolute;
     /* left: 0; */
-    top: 80%;
+    top: 60%;
     background: var(--green);
 }
 .navbar li:hover .dropdown {
@@ -178,9 +181,8 @@ body{
     font-size: 18px;
 }
 .about{
-    padding-top: 70px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -198,6 +200,8 @@ body{
 .about .aboutphoto img{
     width: 100%;
     height:100%;
+    object-fit: cover;
+    /* overflow: hidden; */
 }
 .aboutcontent{
     width: 50%;
@@ -296,18 +300,24 @@ body{
 
 
 
-@media (max-width:600px){
+@media (max-width:640px){
 .p{
     width: 100%;
 }
     
     .about{
-        margin: 10px;
-        top: -40%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about .aboutphoto{
+        width: 100%;
+    }
+    .about .aboutcontent{
+        width: 100%;
     }
     .about .p{
         width: 100%;
-        padding: 20px;
     }
 }
 
