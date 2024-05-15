@@ -34,7 +34,7 @@ $(document).ready(function(){
     })
 });
 
-
+// login page
 // Function to start the counter when it becomes visible
 function startCounterWhenVisible(entries, observer) {
     entries.forEach(entry => {
@@ -65,6 +65,8 @@ const observer = new IntersectionObserver(startCounterWhenVisible, { threshold: 
 const counterContainer = document.querySelector('.countercontainer');
 observer.observe(counterContainer);
 
+// navbar
+
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -72,3 +74,34 @@ let navbar = document.querySelector('.navbar');
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('show');
 }
+
+// services
+document.addEventListener("DOMContentLoaded", function() {
+    let prevScrollPos = window.pageYOffset;
+    const services = document.querySelectorAll(".allservices .service1");
+  
+    function zoomOut() {
+      services.forEach(service => {
+        service.classList.remove("zoom-in");
+        service.classList.add("zoom-out");
+      });
+    }
+  
+    function zoomIn() {
+      services.forEach(service => {
+        service.classList.remove("zoom-out");
+        service.classList.add("zoom-in");
+      });
+    }
+  
+    window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        zoomIn();
+      } else {
+        zoomOut();
+      }
+      prevScrollPos = currentScrollPos;
+    }
+  });
+  

@@ -287,7 +287,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-   
+    
     
 }
 .service1{
@@ -296,15 +296,70 @@ body{
     align-items: center;
     width: 90%;
     height: 150px;
-    
+    transition: all 300ms ease-in ;
     
 }
-.service1 .h{
+.service1:hover{
+    scale: 1.1;
+}
+.h{
+    width: 90%;
+    height: 1px;
+    background-color: black;
 
-    border: 1px solid green;
 }
+.servicehighlight {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Transition effect */
+  .transition {
+    transition: font-size 0.9s;
+  }
+  
+  /* Zoom out effect */
+  .zoom-out {
+    font-size: 14px; /* Decreased font size */
+  }
+  
+  /* Zoom in effect */
+  .zoom-in {
+    font-size: 18px; /* Increased font size */
+  }
 
 /* financial planning */
+
+.loans{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+    padding-left: 30px;
+}
+.mainbox{
+    width: 250px;
+    height: 230px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.mainbox .faicon{
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    /* padding-bottom: 10px; */
+}
 
 
 
