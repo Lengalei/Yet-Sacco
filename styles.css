@@ -273,13 +273,10 @@ body{
 
 
 /* services */
-section .services{
-    width: 100%;
-    height: 100vh;
-}
+
 .services{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: whitesmoke;
     
 }
@@ -307,6 +304,7 @@ section .services{
     border: 1px solid green;
 }
 
+/* financial planning */
 
 
 
