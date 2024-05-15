@@ -272,7 +272,45 @@ body{
 } 
 
 
-/* login page */
+/* services */
+section .services{
+    width: 100%;
+    height: 100vh;
+}
+.services{
+    width: 100vw;
+    height: 100vh;
+    background: whitesmoke;
+    
+}
+.allservices{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.service1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 150px;
+    
+    
+}
+.service1 .h{
+
+    border: 1px solid green;
+}
+
+
+
+
+
 
 
 
