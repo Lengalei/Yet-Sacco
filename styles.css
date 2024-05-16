@@ -378,9 +378,15 @@ body{
     width: 90%;
 }
 .plan .outerbox{
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 480px;
     border: 1px solid black;
+}
+.outerbox .investment{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
 }
 
 
