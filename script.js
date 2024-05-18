@@ -104,4 +104,12 @@ document.addEventListener("DOMContentLoaded", function() {
       prevScrollPos = currentScrollPos;
     }
   });
+
+  // faq
+
+  function toggleAnswer(element) {
+    const faqItem = element.parentElement;
+    faqItem.classList.toggle('active');
+}
+
   

@@ -389,7 +389,119 @@ body{
     align-items: center;
 }
 
+/* FAQ section */
 
+.faq-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plus {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .plus {
+    transform: rotate(45deg);
+}
+
+
+
+
+/* footer */
+.footer{
+    background: #000;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    min-height: 30vh;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 10px;
+   
+}
+.footer .UsefulLinks{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color:whitesmoke;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+}
+.footer .FooterServices{
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px; */
+    
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer p{
+    color: #fff;
+
+}
+.footer #title{
+    margin-bottom: 15px;
+}
+.footer #footeremail{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.footer #subscribe{
+    width: 50%;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+}
+.footer #address{
+    margin-bottom: 10px;
+}
+.footer .socialmediaicons{
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .copyright{
+    width: 100%;
+    background-color: cadetblue;
+    min-height: 30px ;
+    text-align: center;
+}
 
 
 
