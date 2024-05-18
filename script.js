@@ -112,4 +112,44 @@ document.addEventListener("DOMContentLoaded", function() {
     faqItem.classList.toggle('active');
 }
 
-  
+// testimonial
+let currentTestimonial = 0;
+let intervalId;
+
+function showTestimonial(index) {
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    if (index >= testimonials.length) {
+        currentTestimonial = 0;
+    }
+    if (index < 0) {
+        currentTestimonial = testimonials.length - 1;
+    }
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('active');
+        if (i === currentTestimonial) {
+            testimonial.classList.add('active');
+        }
+    });
+}
+
+function nextTestimonial() {
+    currentTestimonial++;
+    showTestimonial(currentTestimonial);
+}
+
+function prevTestimonial() {
+    currentTestimonial--;
+    showTestimonial(currentTestimonial);
+}
+
+function startAutoSlide() {
+    intervalId = setInterval(nextTestimonial, 3000);
+}
+
+function stopAutoSlide() {
+    clearInterval(intervalId);
+}
+
+// Initialize the first testimonial and start the automatic slide
+showTestimonial(currentTestimonial);
+startAutoSlide();
