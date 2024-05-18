@@ -430,6 +430,7 @@ body{
 .pricingplan{
     width: 100%;
     height: auto;
+    background-color: #FFFAFA;
     
 }
 .pricingplan .pricingheading{
@@ -461,6 +462,9 @@ body{
     height: 40px;
 }
 .plan{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding: 40px;
     width: 90%;
 }
@@ -468,12 +472,48 @@ body{
     width: 350px;
     height: 480px;
     border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+.outerbox h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.outerbox h1{
+    font-size: 50px;
+    font-weight: 1000;
+}
+.outerbox .innerbox{
+    width: 98%;
+    padding: 10px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+.middle{
+    background-color: var(--green);
+}
+.outerbox span{
+    font-size: 10px;
 }
 .outerbox .investment{
     display: flex;
     justify-content: space-between;
     padding: 5px;
     align-items: center;
+    margin-bottom: 10px;
+    text-align: start;
+}
+.investment .num{
+    font-size: 20px;
+    font-weight: 700;
+}
+.outerbox button{
+    width: 45%;
+    height: 40px;
+    margin-left: 50px;
 }
 
 /* testimonial section */
