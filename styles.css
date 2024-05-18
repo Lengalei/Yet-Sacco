@@ -417,7 +417,10 @@ body{
     padding-left: 19px;
     /* padding-bottom: 10px; */
 }
-
+.mainbox .p1{
+    font-size: 18px;
+    font-weight: 500;
+}
 
 
 /* pricing plan */
@@ -686,6 +689,21 @@ body{
     }
     .about .p{
         width: 100%;
+    }
+    .services h1{
+        width: 100%;
+    }
+    .allservices .service1{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .service1 .servicehighlight{
+        border: none;
+    }
+    .loans{
+        display: flex;
+        flex-direction: column;
     }
 }
 
