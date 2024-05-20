@@ -57,6 +57,9 @@ header{
 .navbar a.active{
     color: var(--main-color);
 }
+.navbar .dropdown a{
+    z-index: 0;
+}
 
 .main{
     display: flex;

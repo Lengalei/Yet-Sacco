@@ -65,22 +65,37 @@ body{
 }
 .dropdown{
     display: none;
+    
 }
+
+
+.navbar .dropdown a {
+    color: #fff;
+    font-size: 10px;
+    text-align-last: left;
+}
+
+.navbar .dropdown a:hover {
+    color: var(--green);
+}
+
 .navbar li:hover .dropdown{
     display: block;
     position: absolute;
     /* left: 0; */
     top: 60%;
-    background: var(--green);
-}
-.navbar li:hover .dropdown {
-    display: block;
-    margin: 10px;
+    background: #000;
+    font-size: 12px;
+    border-radius: 10px;
     color: #fff;
+    text-align: start;
+    margin: 10px;
 }
+
 .navbar  li:hover .dropdown li{
-    width: 140px;
+    width: 150px;
     padding: 10px;
+    color: #fff;
 }
 .fas{
     float: right;
@@ -682,8 +697,59 @@ body{
     transform: rotate(45deg);
 }
 
+/* contact us */
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom:0 ;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #fff;;
+    color: var(--green);
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: var(--green);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
 
 /* footer */
 .footer{
@@ -803,8 +869,16 @@ body{
 }
 
 
-
-
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 
 
