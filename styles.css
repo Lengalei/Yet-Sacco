@@ -742,13 +742,13 @@ body{
     display: flex;
     align-items: center;
     font-size: 1.7rem;
-    color: #eee;
+    color: #333;
     padding: 1rem 0;
     font-weight: normal;
 }
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 /* footer */
@@ -873,7 +873,7 @@ body{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 .reveal.active{
     transform: translateY(0px);
@@ -914,11 +914,21 @@ body{
         padding: 5px;
     }
     .service1 .servicehighlight{
+        width: 100%;
         border: none;
     }
+    .service1 .serviceexaplanation{
+        width: 100%;
+    }
     .loans{
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
+    }
+    .plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
