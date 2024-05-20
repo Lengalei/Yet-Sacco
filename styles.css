@@ -717,12 +717,10 @@ body{
     margin-bottom: 4rem;
 }
 .contact .row form .box{
-    padding: 1.5rem;
-    margin: 1rem 0;
     background: #fff;;
     color: var(--green);
     text-transform: none;
-    font-size: 1.7rem;
+    font-size: 1rem;
     width: 100%;
 }
 .contact .row form .box::placeholder{
@@ -871,9 +869,9 @@ body{
 
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateX(150px);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all .8s ease;
 }
 .reveal.active{
     transform: translateY(0px);
