@@ -698,57 +698,80 @@ body{
 }
 
 /* contact us */
-.contact .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-.contact .row .content{
-    flex: 1 1 30rem;
-    padding: 4rem;
-    padding-bottom:0 ;
-}
-.contact .row form{
-    flex: 1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-}
-.contact .row form .box{
-    background: #fff;;
-    color: var(--green);
-    text-transform: none;
-    font-size: 1rem;
+.contact{
     width: 100%;
+    height: auto;
 }
-.contact .row form .box::placeholder{
-    text-transform: capitalize;
-}
-.contact .row form .message{
-    height: 15rem;
-    resize: none;
-}
-.contact .row .content .title{
-    text-transform: uppercase;
-    color: var(--green);
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-.contact .row .content .info h3 {
+.contact h1{
+    width: 100%;
     display: flex;
     align-items: center;
-    font-size: 1.7rem;
-    color: #333;
-    padding: 1rem 0;
-    font-weight: normal;
-}
-.contact .row .content .info h3 i{
-    padding-right: 1rem;
-    color: var(--green);
 }
 
+.contact .row{
+    width: 100%;
+    display: flex;
+}
+.contact .content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.content .info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.content .info i{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid gray;
+    padding: 10px;
+}
+form .input{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.input input{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+}
+form textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.btnsend {
+    width: 150px;
+    height: 40px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btnsend:hover{
+    background-color: #fff;
+    color: var(--green);
+    border: 1px solid #2E8B57;
+}
 /* footer */
 .footer{
     background: #000;
@@ -869,7 +892,7 @@ body{
 
 .reveal{
     position: relative;
-    transform: translateX(150px);
+    /* transform: translateX(150px); */
     opacity: 0;
     transition: all .8s ease;
 }
