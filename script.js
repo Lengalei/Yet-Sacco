@@ -46,7 +46,7 @@ function startCounterWhenVisible(entries, observer) {
             const updateCounter = setInterval(function () {
                 counterNumber++;
                 counterspan.textContent = counterNumber;
-                if (counterNumber >= 20) {
+                if (counterNumber >= 2) {
                     clearInterval(updateCounter);
                     counterspan.style.color = '#2E8B57';
                 }

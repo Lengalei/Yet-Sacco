@@ -12,5 +12,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: antiquewhite;
+    padding-top: 100px;
     height: 50vh;
 }

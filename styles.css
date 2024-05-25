@@ -22,13 +22,13 @@ body{
 
 .logo{
     width: 170px;
-    height: 100px;
+    height: 80px;
     object-fit: cover;
     overflow: hidden;
 }
 .logo img{
     width: 170px;
-    height: 100px;
+    height: 80px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -892,7 +892,7 @@ form textarea{
 
 .reveal{
     position: relative;
-    /* transform: translateX(150px); */
+    transform: translateY(150px);
     opacity: 0;
     transition: all .8s ease;
 }
