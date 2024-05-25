@@ -448,7 +448,7 @@ body{
     background-color: #FFFAFA;
     
 }
-.pricingplan .pricingheading{
+.pricingheading{
     padding: 20px;
     display: flex;
     flex-direction: column;
