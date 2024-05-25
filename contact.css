@@ -16,3 +16,17 @@
     padding-top: 100px;
     height: 50vh;
 }
+.bsheader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.bsheader h1{
+    font-size: 60px;
+}
+.bsheader p{
+    width: 70%;
+}
