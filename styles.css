@@ -106,6 +106,25 @@ body{
     width: 100%;
     height: auto;
     overflow: hidden;
+    display: flex;
+}
+.homecontent{
+    width: 70%;
+}
+.homecontent .intro{
+    width: 60%;
+}
+.homecontent .button{
+    padding-left: 70px;
+}
+.hero .homeimage{
+    width: 30%;
+    height: 80vh;
+    margin-top: 100px;
+}
+.homeimage img{
+    width: 100%;
+    height: 100%;
 }
 .box div{
     position: absolute;
