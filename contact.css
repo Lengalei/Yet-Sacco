@@ -167,6 +167,7 @@
 }
 form{
     display: flex;
+    flex-direction: column;
     
 }
 .forminfo input{
@@ -190,4 +191,8 @@ form{
     color:var(--green);
     background-color: #fff;
     border: 2px solid black;
+}
+
+label {
+    display: block;
 }
