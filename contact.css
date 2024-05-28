@@ -220,14 +220,14 @@ form{
   }
   
   #loanForm input:focus {
-    border-color: #007bff;
+    border-color: var(--green);;
     outline: none;
   }
   
     #loanForm input[type="submit"] {
         padding: 10px 20px;
         width: fit-content;
-        background-color: #007bff;
+        background-color: var(--green);
         color: #fff;
         border: none;
         border-radius: 4px;
