@@ -998,6 +998,9 @@ form textarea{
     .pricingheading .buttons{
         width: 80%;
     }
+    .pricingheading p{
+        width: 100%;
+    }
     .contact .row{
         display: flex;
         flex-direction: column;
