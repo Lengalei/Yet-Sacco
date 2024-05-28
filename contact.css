@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.loanheader{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: antiquewhite;
+    padding-top: 100px;
+    height: 50vh;
+}
+.bsheader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    gap: 20px;
+}
+.bsheader h1{
+    font-size: 60px;
+}
+.bsheader p{
+    width: 70%;
+}
+/* loancontent */
+.pricingheading{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricingheading h2{
+    color: var(--green);
+    margin-bottom: 20px;
+}
+.pricingheading h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.pricingheading p{
+    width: 40%;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.loans{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    padding-left: 30px;
+    z-index: 1;
+}
+.mainbox{
+    width: 280px;
+    height: 280px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.mainbox:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+.mainbox .faicon{
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    color: var(--green);
+    align-items: center;
+    padding-left: 19px;
+    /* padding-bottom: 10px; */
+}
+.mainbox .p1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.documentations{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background: #fdf9fd;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.documents{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: start;
+}
+.documents, h2, p{
+    padding-left: 30px;
+}
+.documents h2{
+    color: var(--green);
+}
+.documents h1{
+    font-size: 30px;
+}
+.documents p{
+    margin-bottom: 10px;
+}
+.documents button{
+    margin-left: 150px;
+}
+.documentations .images{
+    width:300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+.images img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.apply{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+.apply .image{
+    width: 49%;
+    height: 80vh;
+    object-fit: cover;
+}
+.apply .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.apply .forminfo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.forminfo .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.forminfo input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.forminfo button{
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    background-color:var(--green);
+    border: none;
+    font-size: 20px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+.forminfo button:hover{
+    color:var(--green);
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+label {
+    display: block;
+}
