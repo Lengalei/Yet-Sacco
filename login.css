@@ -262,3 +262,12 @@ p{
     }
     
 }
+
+
+
+@media (max-width: 768px) {
+    .overlay-panel {
+        display: flex;
+        flex-direction: column;
+    }
+}
