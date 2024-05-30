@@ -238,3 +238,17 @@ form{
     display: flex;
   }
   
+
+
+  @media (max-width: 780px){
+    .bsheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .bsheader p{
+        width: 90%;
+    }
+    .pricingheading p{
+        width: 80%;
+    }
+  }
