@@ -6,7 +6,10 @@
     text-decoration: none;
     list-style: none;
 }
-
+ .loanheader a{
+    color: var(--green);
+    font-size: 18px;
+}
 .loanheader{
     display: flex;
     align-items: center;
@@ -250,5 +253,19 @@ form{
     }
     .pricingheading p{
         width: 80%;
+    }
+    .documentations{
+        display: flex;
+        flex-direction: column;
+    }
+    .documents{
+        width: 80%;
+    }
+    .apply{
+        display: flex;
+        flex-direction: column;
+    }
+    .apply .image{
+        display: none;
     }
   }
