@@ -219,6 +219,8 @@ body{
     font-size: 30px;
     display: flex;
     width: 60%;
+    animation: typing 2s steps(18),
+    cusor .4s step-end infinite alternate;
     
 }
 .p{
@@ -291,15 +293,17 @@ body{
 }
 .about-title .h2{
     color: #2E8B57;
-    text-align: center;
-    width: 60%;
+    /* text-align: center; */
+    width: 20%;
+    border-bottom: solid 2px ;
 }
 .about .p{
-    width:80%;
+    width:100%;
     height: 50px;
     padding: 20px;
     display: flex;
     align-self: stretch ;
+    text-align: center;
 }
 .about .countercontainer{
     width: 100px;
@@ -339,7 +343,7 @@ body{
     height: auto;
     background: whitesmoke;
     padding: 40px;
-    
+    padding-right: 20px;
 }
 .services h3, h1{
     padding-left: 30px;
@@ -371,7 +375,7 @@ body{
     width: 90%;
     height: 150px;
     transition: all 300ms ease-in ;
-    
+    padding-right: 20px;
 }
 .service1:hover{
     scale: 1.1;
@@ -428,7 +432,7 @@ body{
     margin-bottom: 20px;
 }
 .loans{
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -734,9 +738,10 @@ body{
     height: auto;
 }
 .contact h1{
-    width: 100%;
+    width: 20%;
     display: flex;
     align-items: center;
+    border-bottom: solid 2px var(--green);;
 }
 
 .contact .row{
@@ -928,7 +933,6 @@ form textarea{
 .reveal{
     position: relative;
     transform: translateY(150px);
-    min-width: 350px;
     opacity: 0;
     transition: all .8s ease;
 }
@@ -1038,6 +1042,9 @@ form textarea{
     .copyright{
         display: flex;
         flex-direction: column;
+    }
+    .services .h1{
+        width: 100%;
     }
 }
 
