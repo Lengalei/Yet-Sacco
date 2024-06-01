@@ -1014,6 +1014,9 @@ form textarea{
     .pricingheading p{
         width: 100%;
     }
+    .contact .heading{
+        width: 40%;
+    }
     .contact .row{
         display: flex;
         flex-direction: column;
@@ -1034,6 +1037,113 @@ form textarea{
     .footercontent{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 0 40px;
+    }
+    .footercontent .highlights{
+        width: 100%;
+    }
+    .footerend{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .h1{
+        width: 100%;
+    }
+}
+@media (max-width:900px){
+    .intro{
+        width: 80%;
+        font-size: 22px;
+    }
+    .btn{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .p{
+        width: 100%;
+    }
+    .homeimage{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about .aboutphoto{
+        width: 100%;
+    }
+    .about .aboutcontent{
+        width: 100%;
+    }
+    .about .p{
+        width: 100%;
+    }
+    .services h1{
+        width: 100%;
+    }
+    .allservices .service1{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .service1 .servicehighlight{
+        width: 100%;
+        border: none;
+    }
+    .service1 .serviceexaplanation{
+        width: 100%;
+    }
+    .loans{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .financialplan .h1{
+        width: 100%;
+    }
+    .pricingheading{
+        width: 100%;
+    }
+    .pricingheading .buttons{
+        width: 80%;
+    }
+    .pricingheading p{
+        width: 100%;
+    }
+    .contact .row{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .row .content{
+        width: 100%;
+    }
+    form{
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .footercontent{
+        display: flex;
+        /* flex-direction: column; */
+        width: 100%;
+        padding: 0 40px;
     }
     .footerend{
         display: flex;
