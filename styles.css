@@ -855,6 +855,7 @@ form textarea{
 }
 .footercontent p{
     margin-bottom: 20px;
+    padding-right: 70px;
 }
 .footer #footeremail{
     width: 50%;
@@ -876,6 +877,7 @@ form textarea{
     flex-direction: row;
     gap: 10px;
     padding-top: 20px;
+    padding-left: 25px;
 }
 .footer .socialmediaicons:hover{
     color: var(--green);
@@ -915,18 +917,19 @@ form textarea{
     width: 20%;
 }
 .top{
-    width: 30px;
+    width: 40px;
     height: 40px;
     position: fixed;
     bottom: 7.5rem; right: 2rem;
     z-index: 100;
     display: none ;
-    background-color: #a9ffa9;
+    background-color:transparent;
+    border: solid 2px var(--green);
     color: var(--green);
-    padding: 5px;
-    padding-bottom: 5px;
-    font-size: 30px;
-    border-radius: 10px;
+   padding-left: 8px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    border-radius: 50%;
 }
 
 
