@@ -164,27 +164,27 @@ body{
     animation: animate 9s linear infinite;
 }
 .hero .box div:nth-child(4){
-    top: 20%;
+    top: 2%;
     left: 60%;
     animation: animate 10s linear infinite;
 }
 .hero .box div:nth-child(5){
-    top: 67%;
+    top: 8%;
     left: 10%;
     animation: animate 6s linear infinite;
 }
 .hero .box div:nth-child(6){
-    top: 80%;
+    top: 8%;
     left: 70%;
     animation: animate 15s linear infinite;
 }
 .hero .box div:nth-child(7){
-    top: 60%;
-    left: 80%;
+    top: 3%;
+    left: 30%;
     animation: animate 15s linear infinite;
 }
 .hero .box div:nth-child(8){
-    top: 8%;
+    top: 10%;
     left: 80%;
     animation: animate 16s linear infinite;
 }
@@ -195,7 +195,7 @@ body{
 }
 .hero .box div:nth-child(10){
     top: 2%;
-    left: 80%;
+    left: 90%;
     animation: animate 5s linear infinite;
 }
 
