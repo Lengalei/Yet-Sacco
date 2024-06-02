@@ -272,7 +272,7 @@ body{
     color: #2E8B57;
     border-bottom: 2px solid #2E8B57;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: fit-content;
     align-self: center;
 }
@@ -296,7 +296,8 @@ body{
 .aboutcontent h1 {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
+    width: 100%;
 }
 .about .years{
     width: 70%;
@@ -305,6 +306,7 @@ body{
     justify-content: center;
     gap: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 .years p{
     width: 35%;
