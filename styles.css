@@ -195,7 +195,7 @@ body{
 }
 .hero .box div:nth-child(10){
     top: 2%;
-    left: 90%;
+    left: 0%;
     animation: animate 5s linear infinite;
 }
 
@@ -232,112 +232,109 @@ body{
     padding-left: 30px;
     font-size: 18px;
 }
-.about{
+.about {
     width: 100%;
-    height: auto;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     background-color: #fcfbfc;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.about .aboutphoto{
-    width: 49%;
-    height:600px;
-    /* background-color: var(--green); */
-    padding: 20px ;
+.about .aboutphoto {
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    object-fit: cover;
     overflow: hidden;
+    margin-right: 2%;
 }
-.about .aboutphoto img{
+
+.about .aboutphoto img {
     width: 100%;
-    height:47%;
+    height: 47%;
     object-fit: cover;
-}
-.aboutcontent{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-.mission{
-    padding-top: 90px;
-    padding-left: 50px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    
-}
-.mission h3{
-    width: 130px;
+    margin-bottom: 6%;
     border-radius: 10px;
-    margin-top: 10px;
-    background: transparent;
-    box-shadow: 0 2px 10px var(--green);
-}
-.mission .p{
-    width: 100%;
-}
-.mission button{
-    margin-top: 150px ;
-
 }
 
-
-.about-title {
+.aboutcontent {
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-}
-.about-title .h2{
-    color: #2E8B57;
-    /* text-align: center; */
-    width: 20%;
-    border-bottom: solid 2px ;
-}
-.about .p{
-    width:100%;
-    height: 50px;
     padding: 20px;
-    display: flex;
-    align-self: stretch ;
-    text-align: center;
 }
-.about .countercontainer{
-    width: 100px;
-    height: 50px;
-    padding-left: 150px;
-    display: flex;
-    align-items: center;
+
+.about-title h2 {
+    color: #2E8B57;
+    border-bottom: 2px solid #2E8B57;
     padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+    align-self: center;
 }
-.about .countercontainer .counter{
-    width: 100px;
-    height: 50px;
+
+.countercontainer {
+    display: flex;
+    align-items: baseline;
     font-size: 70px;
     font-weight: 500;
-    color: var(--green);
+    color: #2E8B57;
 }
-.countercontainer p{
-    padding-top: 50px;
-    font-weight: 500;
+
+.countercontainer p {
+    margin-left: 10px;
     font-size: 40px;
-    color: var(--green);
+    font-weight: 500;
 }
-.years{
-    margin-top: 40px;
-    padding-left: 100px;
-    font-size: 20px;
-} 
-.aboutcontent .h1{
-    font-size: 23px;
+
+
+
+.aboutcontent h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
 }
+.about .years{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.years p{
+    width: 35%;
+    font-weight: 600;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.mission {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #2E8B57;
+    border-radius: 5px;
+}
+
+.mission h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #2E8B57;
+}
+
+.mission p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 
 
 /* services */
