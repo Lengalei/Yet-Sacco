@@ -266,7 +266,7 @@ p{
 
 
 @media (max-width: 768px) {
-    .overlay-panel {
+    .form-container {
         display: flex;
         flex-direction: column;
     }
